@@ -1,0 +1,576 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    background: white;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 16px;
+    /* height: 100vh; */
+    /* border: 1px solid; */
+    text-align: center;
+    align-content: center;
+}
+
+.header{
+    width: 100%;
+    /* border: 1px solid; */
+    text-align: center;
+    font-size: 39px;
+    padding: 6px 0px;
+}
+
+.container{
+    text-align: center;
+    width: 400px;
+    /* border: 1px solid; */
+    margin: 0px auto;
+    margin-top: 24px;
+}
+
+.rectangularAd{
+    width: 100%;
+    margin-top: 26px;
+    float: left;
+}
+
+.expander{
+    width:400px;
+    display: block;
+    border: 1px solid #989898;
+    text-align: center;
+    height: 33px;
+    margin: 0 auto;
+    padding: 7px 0px;
+    margin-top: 9px;
+    border-radius: 4px;
+}
+
+
+
+.expander:hover{
+    background: #f3f3f3;
+}
+
+.skinsContainer{
+    border: 0px solid;
+    /* background: green; */
+    height: 121px;
+    /* padding-left: 99px; */
+    /* padding-top: 6px; */
+}
+
+.leftArrow{border: 1px solid;float: left;font-size: 30px;width: 10%;cursor: pointer;border-radius: 52px;margin: 31px 35px 0px 35px;margin-left: 107px;}
+.rightArrow{border: 1px solid;float: left;font-size: 30px;width: 10%;cursor: pointer;border-radius: 49px;margin: 31px 35px 0px 35px;}
+
+.aSkin{
+    /* border:1px solid; */
+    float: left;
+}
+
+.aSkin img{width: 30px;}
+
+
+
+
+
+
+
+
+/*rooms*/
+
+.selectRoom .row {
+    /* border: 1px solid #ccc; */
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 3px 11px;
+}
+.selectRoom .number{
+    border: 1px solid;
+    border: 1px;
+    border: 1px solid;
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.selectRoom .location{border: 1px;/* border: 1px solid; */float: left;font-size: 14px;}
+.selectRoom .join{border: 1px;float: right;border: 1px solid;font-size: 11px;padding: 1px 4px;border-radius: 4px;color: green;cursor: pointer;}
+
+
+
+
+/*--------------------*/
+
+
+canvas{
+    border:0px solid;
+}
+
+
+.vote{
+    border: 1px solid;
+    margin: 0px auto;
+    width: 382px;
+    display: block;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    color: #747474;
+    /* background: #1443ff; */
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: monospace;
+}
+.kick{
+    border: 1px solid;
+    width: 70px;
+    text-align: center;
+    padding: 4px 0px;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+.kickField{border: 1px solid;text-align: center;padding: 4px 0px;position: fixed;bottom: 0;right: 0;background: white;}
+
+.kickContainer {
+    /* background: red; */
+    border: 1px solid #838383;
+    width: 301px;
+    height: 64px;
+    margin: auto;
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    display: none;
+    background: white;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.kickContainerOverlay{
+    border: 1px solid;
+    /* text-align: center; */
+    position: absolute;
+    top: 0;
+    color: black;
+    /* width: 100%; */
+    left: 0;
+}
+.kickContainer .title{
+    text-align: center;
+    /* border: 1px solid; */
+    padding: 7px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.kickContainer .yes{
+    border: 1px solid;
+    float: right;
+    padding: 2px 20px;
+    margin-top: 8px;
+    margin-right: 62px;
+    cursor: pointer;
+    border-color: #7c7c7c;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+
+
+.kickContainer .no{
+    float: left;
+    border: 1px solid;
+    padding: 2px 23px;
+    margin-top: 8px;
+    margin-left: 62px;
+    cursor: pointer;
+    border-color: #7c7c7c;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+
+
+
+
+
+.loadingOverlay{/* border: 1px solid; */width: 100%;height: 100%;background: #fff;position: absolute;left: 0px;top: 0px;}
+.loadingOverlay1{
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    left: 0;
+}
+
+.loadingOverlay1 div{
+    /* text-align: center; */
+    /* border: 1px solid; */
+    width: 130px;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.loadingOverlay1 p {
+    /* border: 1px solid; */
+    display: inline;
+    float: right;
+    margin: 0px;
+    margin-top: 6px;
+}
+
+
+
+
+.menuContainer{
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    /* text-align: center; */
+    /* text-align: center; */
+}
+
+.nameField{
+    font-size: 17px;
+    to; */
+    width: 43%;
+}
+
+.overlay{
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+.quickPlay{
+    /* float: right; */
+    /* margin-left: 11px; */
+    /* padding: 1px 6px; */
+    /* background: #54a1e4; */
+    color: #1e900b;
+    border: 1px solid;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+.playButton{background: black;color: white;cursor: pointer;}
+.playButton:hover{
+    background: black;
+}
+.selectRoom{
+    cursor: pointer;
+    /* height: 132px; */
+    /* overflow-x: hidden; */
+    word-wrap: break-word;
+    /* padding: 0; */
+}
+
+
+
+
+/*when we low resolution*/
+@media (max-width:500px) {
+    body{
+        font-size: 14px;
+    }
+    .container{
+    width: 98%;
+    }
+    .expander{
+        width: 100%;
+    }
+    .header{
+        font-size: 33px;
+    }
+    .leftArrow{
+    border-radius: 0;
+    margin: 35px 0px 0px 0px;
+    }
+    .rightArrow{
+        border-radius: 0;
+        margin: 35px 0px 0px 0px;
+    }
+    .aSkin{
+        width: 80%;
+    }
+
+}
+
+
+
+
+/*CSS for Loading spinner*/
+.cssload-loader {
+    display: block;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid rgb(222, 222, 222); */
+    animation: cssload-loader 2.3s infinite ease;
+    -o-animation: cssload-loader 2.3s infinite ease;
+    -ms-animation: cssload-loader 2.3s infinite ease;
+    -webkit-animation: cssload-loader 2.3s infinite ease;
+    -moz-animation: cssload-loader 2.3s infinite ease;
+    /* margin: auto; */
+    float: left;
+}
+
+.cssload-loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    animation: cssload-loader-inner 2.3s infinite ease-in;
+    -o-animation: cssload-loader-inner 2.3s infinite ease-in;
+    -ms-animation: cssload-loader-inner 2.3s infinite ease-in;
+    -webkit-animation: cssload-loader-inner 2.3s infinite cubic-bezier(0.4, 0, 1, 1);
+    -moz-animation: cssload-loader-inner 2.3s infinite ease-in;
+}
+
+
+
+
+
+@keyframes cssload-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(180deg);
+    }
+    
+    50% {
+        transform: rotate(180deg);
+    }
+    
+    75% {
+        transform: rotate(360deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(180deg);
+    }
+    
+    50% {
+        transform: rotate(180deg);
+    }
+    
+    75% {
+        transform: rotate(360deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(180deg);
+    }
+    
+    50% {
+        transform: rotate(180deg);
+    }
+    
+    75% {
+        transform: rotate(360deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(180deg);
+    }
+    
+    50% {
+        transform: rotate(180deg);
+    }
+    
+    75% {
+        transform: rotate(360deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(180deg);
+    }
+    
+    50% {
+        transform: rotate(180deg);
+    }
+    
+    75% {
+        transform: rotate(360deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cssload-loader-inner {
+    0% {
+        height: 0%;
+    }
+    
+    25% {
+        height: 0%;
+    }
+    
+    50% {
+        height: 100%;
+    }
+    
+    75% {
+        height: 100%;
+    }
+    
+    100% {
+        height: 0%;
+    }
+}
+
+@-o-keyframes cssload-loader-inner {
+    0% {
+        height: 0%;
+    }
+    
+    25% {
+        height: 0%;
+    }
+    
+    50% {
+        height: 100%;
+    }
+    
+    75% {
+        height: 100%;
+    }
+    
+    100% {
+        height: 0%;
+    }
+}
+
+@-ms-keyframes cssload-loader-inner {
+    0% {
+        height: 0%;
+    }
+    
+    25% {
+        height: 0%;
+    }
+    
+    50% {
+        height: 100%;
+    }
+    
+    75% {
+        height: 100%;
+    }
+    
+    100% {
+        height: 0%;
+    }
+}
+
+@-webkit-keyframes cssload-loader-inner {
+    0% {
+        height: 0%;
+    }
+    
+    25% {
+        height: 0%;
+    }
+    
+    50% {
+        height: 100%;
+    }
+    
+    75% {
+        height: 100%;
+    }
+    
+    100% {
+        height: 0%;
+    }
+}
+
+@-moz-keyframes cssload-loader-inner {
+    0% {
+        height: 0%;
+    }
+    
+    25% {
+        height: 0%;
+    }
+    
+    50% {
+        height: 100%;
+    }
+    
+    75% {
+        height: 100%;
+    }
+    
+    100% {
+        height: 0%;
+    }
+}
+
